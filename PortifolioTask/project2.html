@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - Flexbox Nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding-top: 50px;
+            /* padding: 40px; */
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            background-color: rgb(143, 232, 248);
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav li {
+            flex: 1;
+            max-width: 150px;
+        }
+
+
+        nav a {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            
+        }
+
+
+        .youtube {
+            color: #cc1818;
+            background-color: rgba(204, 24, 24, 0.1);
+        }
+
+        .youtube:hover {
+            background-color: #cc1818;
+            color: white;
+        }
+
+        .about {
+            color: #2e7d32;
+            background-color: rgba(46, 125, 50, 0.1);
+        }
+
+        .about:hover {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .contact {
+            color: #1565c0;
+            background-color: rgba(21, 101, 192, 0.1);
+        }
+
+        .contact:hover {
+            background-color: #1565c0;
+            color: white;
+        }
+
+        .mail {
+            color: #ff8f00;
+            background-color: rgba(255, 145, 0, 0.1);
+        }
+
+        .mail:hover {
+            background-color: #ff8f00;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.youtube.com/" class="youtube">Youtube</a></li>
+            <li><a href="https://github.com/riteshkr26/Mernstack_Project/mernstack/" class="about">About</a></li>
+            <li><a href="https://www.linkedin.com/in/ritesh-kumar-sharma-9b8a1b1b3/" class="contact">Contact</a></li>
+            <li><a href="mailto:riteshkumarsharma202@gmail.com" class="mail">Mail</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
