@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset and canvas setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212; /* Dark background matching the video */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* The Box Nesting Layout */
+        .a {
+            width: 80vw;
+            height: 80vh;
+            background-color: #423030; /* Dark brown outermost box */
+        }
+
+        .b { 
+            width: 80%;
+            height: 80%;
+            background-color: green; /* Green middle box */
+        }
+
+        .c {
+            width: 80%;
+            height: 80%;
+            background-color: #731824; /* Dark red/maroon inner box */
+        }
+
+        /* Button Styling */
+        button {
+            font-size: 1.5rem;
+            color: aliceblue;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent grey appearance */
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 15px; /* Pushes it slightly away from the absolute top-left corner */
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>click me</button>
+            </div>
+        </div>
+    </div>
+    <script src="./bubblin.js"></script>
+</body>
+</html>

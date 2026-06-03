@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{ 
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+
+.lt{
+    text-decoration: line-through;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+         <li>Banana</li>
+        <li>Chicken</li>
+    </ul>
+
+    <script src="./events4.js"></script>
+</body>
+</html>
+
+<!--
+jab bhi aap click karte ho ya koi bhi event raise karte ho to 
+aapka jo event flow do phases mein chalta hai :
+
+phase 1: event top level element se neeche ki taraf aayega.
+phase 2: event raised element se parent ki taraf jayega.
+
+aur pahle phase 1 hoti hai .
+-->

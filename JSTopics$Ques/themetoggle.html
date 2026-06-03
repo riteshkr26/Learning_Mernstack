@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --light-bg: #f0f0f0;
+            --light-text: #333;
+            --dark-bg: #333;
+            --dark-text: #f0f0f0;
+        }
+     body.light {
+            background-color: var(--light-bg);
+            color: var(--light-text);
+        }
+        body.dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+            body{
+                margin: 0;
+                font-family: Arial, sans-serif;
+                transition: background-color 0.3s, color 0.3s;
+
+            }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px; 
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #999;
+            color: white;
+        }   
+ </style>
+</head>
+<body class="light">
+    <div class="container">
+        <h1>Theme Toggle</h1>
+        <button id="toggleBtn">Toggle Theme</button>
+    </div>
+    <script src="./theme.js"></script>
+</body>
+</html>
