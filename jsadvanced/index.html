@@ -1,0 +1,31 @@
+<!-- <--
+ * =========================================================================
+ * REAL-WORLD CLOSURE EXAMPLE: DYNAMIC TOASTER NOTIFICATION [00:59:13]
+ * Source: Sheryians Coding School (Advanced JS Tutorial)
+ * =========================================================================
+ * * CONCEPT BACKGROUND:
+ * - Jab bhi hum `createToaster` function call karenge, tab memory mein 
+ * ek Execution Context banega.
+ * - Iske andar banaya gaya variable (`activeToasts`) parent function ke liye private ho jata hai.
+ * - Return hone wala inner function is variable ki state ko 'Closure' ki wajah se yaad rakhta hai.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toaster Notification Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+
+    <button id="toastBtn" class="bg-blue-600 hover:bg-blue-700 px-6 py-2.5 rounded font-medium transition">
+        Show Notification
+    </button>
+
+    <div id="parent" class="parent p-10 fixed top-5 right-5 flex flex-col gap-3">
+        </div>
+
+    <script src="toaster.js"></script>
+</body>
+</html>

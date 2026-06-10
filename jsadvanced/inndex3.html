@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manager with Remove Functionality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-8 flex flex-col items-center gap-10">
+
+    <form class="bg-gray-800 p-6 rounded-xl shadow-2xl w-full max-w-md flex flex-col gap-4 border border-gray-700">
+        <h2 class="text-2xl font-extrabold text-center text-blue-400 mb-2">Create Developer Profile</h2>
+        
+        <input type="text" id="name" placeholder="Full Name" class="p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500 transition">
+        <input type="text" id="role" placeholder="Role (e.g., Frontend Developer)" class="p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500 transition">
+        <input type="text" id="bio" placeholder="Short Bio" class="p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500 transition">
+        <input type="text" id="photo" placeholder="Photo URL" class="p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500 transition">
+        
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg font-bold tracking-wide transition transform active:scale-95">
+            Save & Render Profile
+        </button>
+    </form>
+
+    <div id="cards-wrapper" class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+
+    <script src="this2.js"></script>
+</body>
+</html>
